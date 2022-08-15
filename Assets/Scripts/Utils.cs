@@ -31,13 +31,4 @@ public static class Utils
 
         return new Vector3(x, 0f, z);
     }
-        
-    public static Vector3 CalculatePosition(int id, int count, float radius)
-    {
-        float radians = id * Mathf.PI * 2f / count;
-            
-        Vector2 angToDir = new Vector2(Mathf.Cos(radians) * radius, Mathf.Sin(radians) * radius);
-            
-        return new Vector3(angToDir.y, 0, angToDir.x);
-    }
 }
