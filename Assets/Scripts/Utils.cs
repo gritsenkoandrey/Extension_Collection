@@ -22,7 +22,7 @@ public static class Utils
         return (1 - t) * (1 - t) * p0 + 2 * (1 - t) * t * p1 + t * t * p2;
     }
 
-    public static Vector3 GeneratePoint(float radius)
+    public static Vector3 GetPointInsideUnitSphere(float radius)
     {
         float angle = UnityEngine.Random.Range(0f, 1f) * (2f * Mathf.PI) - Mathf.PI;
                     
