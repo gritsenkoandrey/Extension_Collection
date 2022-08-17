@@ -1,14 +1,16 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using Object = UnityEngine.Object;
 
 namespace Patterns.ServiceLocators
 {
     public static class ServiceLocatorMonoBehaviour
     {
-        private static readonly Dictionary<Type, object> ServiceContainer = new Dictionary<Type, object>();
+        private static readonly Dictionary<object, object> ServiceContainer;
+
+        static ServiceLocatorMonoBehaviour()
+        {
+            ServiceContainer = new Dictionary<object, object>();
+        }
         
         public static T GetService<T>(bool createObjectIfNotFound = true) where T : Object
         {
@@ -45,18 +47,6 @@ namespace Patterns.ServiceLocators
             }
             
             return (T)ServiceContainer[typeof(T)];
-        }
-
-        public static void Cleanup()
-        {
-            List<object> objects = ServiceContainer.Values.ToList();
-            
-            foreach (Object o in objects)
-            {
-                Object.Destroy(o);
-            }
-
-            ServiceContainer.Clear();
         }
     }
 }

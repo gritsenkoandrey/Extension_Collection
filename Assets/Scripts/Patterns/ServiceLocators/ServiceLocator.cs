@@ -9,7 +9,7 @@ namespace Patterns.ServiceLocators
 
         public static void SetService<T> (T value) where T : class
         {
-            Type typeValue = value.GetType();
+            Type typeValue = typeof(T);
             
             if (!ServiceContainer.ContainsKey(typeValue))
             {
@@ -19,12 +19,14 @@ namespace Patterns.ServiceLocators
 
         public static T Resolve<T>()
         {
-            return (T)ServiceContainer[typeof(T)];
-        }
+            Type type = typeof(T);
 
-        public static void Cleanup()
-        {
-            ServiceContainer.Clear();
+            if (ServiceContainer.ContainsKey(type))
+            {
+                return (T) ServiceContainer[type];
+            }
+
+            return default;
         }
     }
 }
