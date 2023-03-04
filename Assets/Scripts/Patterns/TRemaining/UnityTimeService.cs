@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Patterns.TRemaining
+namespace AndreyGritsenko.ExtensionCollection.Patterns.TRemaining
 {
     public sealed class UnityTimeService : ITimeService
     {

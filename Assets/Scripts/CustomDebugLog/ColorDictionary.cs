@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 
-namespace CustomDebugLog
+namespace AndreyGritsenko.ExtensionCollection.CustomDebugLog
 {
-    public sealed class ColorDictionary
+    public static class ColorDictionary
     {
         private const string Black = "000000";
         private const string Gray = "adadad";
@@ -13,7 +13,7 @@ namespace CustomDebugLog
         private const string Red = "e34234";
         private const string Magenta = "ce29ff";
 
-        public static readonly Dictionary<DebugColor, string> Colors = new Dictionary<DebugColor, string>
+        public static readonly Dictionary<DebugColor, string> Colors = new()
         {
             { DebugColor.Black, Black },
             { DebugColor.Gray, Gray },

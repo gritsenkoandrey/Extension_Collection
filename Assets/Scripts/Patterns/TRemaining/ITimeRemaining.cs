@@ -1,6 +1,6 @@
 using System;
 
-namespace Patterns.TRemaining
+namespace AndreyGritsenko.ExtensionCollection.Patterns.TRemaining
 {
     public interface ITimeRemaining
     {

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Patterns.PoolObject
+namespace AndreyGritsenko.ExtensionCollection.Patterns.PoolObject
 {
     public class Pool : MonoBehaviour
     {

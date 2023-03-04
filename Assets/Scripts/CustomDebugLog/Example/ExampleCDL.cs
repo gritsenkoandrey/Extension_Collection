@@ -1,12 +1,12 @@
 using UnityEngine;
 
-namespace CustomDebugLog.Example
+namespace AndreyGritsenko.ExtensionCollection.CustomDebugLog.Example
 {
     public sealed class ExampleCDL : MonoBehaviour
     {
         private void Start()
         {
-            CustomDebug.Log(DebugColor.Green, "Start Game");
+            CustomDebug.Log($"{FormatNumbers.Trim(5500)}", DebugColor.Green);
         }
     }
 }

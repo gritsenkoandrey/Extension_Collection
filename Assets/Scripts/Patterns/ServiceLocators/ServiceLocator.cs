@@ -1,7 +1,7 @@
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
 
-namespace Patterns.ServiceLocators
+namespace AndreyGritsenko.ExtensionCollection.Patterns.ServiceLocators
 {
     public static class ServiceLocator
     {

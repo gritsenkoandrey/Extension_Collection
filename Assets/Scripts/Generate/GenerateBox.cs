@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Generate
+namespace AndreyGritsenko.ExtensionCollection.Generate
 {
     public sealed class GenerateBox : MonoBehaviour
     {

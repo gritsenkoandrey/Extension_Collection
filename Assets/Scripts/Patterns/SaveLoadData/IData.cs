@@ -1,4 +1,4 @@
-namespace Patterns.SaveLoadData
+namespace AndreyGritsenko.ExtensionCollection.Patterns.SaveLoadData
 {
     public interface IData<T>
     {

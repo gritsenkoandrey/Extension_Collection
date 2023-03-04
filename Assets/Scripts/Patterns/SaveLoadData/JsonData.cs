@@ -1,7 +1,7 @@
 using System.IO;
 using UnityEngine;
 
-namespace Patterns.SaveLoadData
+namespace AndreyGritsenko.ExtensionCollection.Patterns.SaveLoadData
 {
     public class JsonData<T> : IData<T>
     {

@@ -1,4 +1,4 @@
-namespace Patterns.PoolObject
+namespace AndreyGritsenko.ExtensionCollection.Patterns.PoolObject
 {
     public sealed class ObjectPoolContainer<T>
     {

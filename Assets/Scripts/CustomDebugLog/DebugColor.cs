@@ -1,4 +1,4 @@
-namespace CustomDebugLog
+namespace AndreyGritsenko.ExtensionCollection.CustomDebugLog
 {
     [System.Serializable]
     public enum DebugColor : byte

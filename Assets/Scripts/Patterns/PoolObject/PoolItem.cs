@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Patterns.PoolObject
+namespace AndreyGritsenko.ExtensionCollection.Patterns.PoolObject
 {
     [System.Serializable]
     public struct PoolItem

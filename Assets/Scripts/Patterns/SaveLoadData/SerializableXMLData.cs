@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Xml.Serialization;
 
-namespace Patterns.SaveLoadData
+namespace AndreyGritsenko.ExtensionCollection.Patterns.SaveLoadData
 {
     public class SerializableXMLData<T> : IData<T>
     {

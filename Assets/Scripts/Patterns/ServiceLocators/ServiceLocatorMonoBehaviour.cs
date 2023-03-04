@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Patterns.ServiceLocators
+namespace AndreyGritsenko.ExtensionCollection.Patterns.ServiceLocators
 {
     public static class ServiceLocatorMonoBehaviour
     {

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Tutorial
+namespace AndreyGritsenko.ExtensionCollection.Tutorial
 {
     public sealed class InfinityTutorial : MonoBehaviour
     {

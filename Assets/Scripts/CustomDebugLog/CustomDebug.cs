@@ -1,14 +1,12 @@
 using UnityEngine;
 
-namespace CustomDebugLog
+namespace AndreyGritsenko.ExtensionCollection.CustomDebugLog
 {
-    public sealed class CustomDebug
+    public static class CustomDebug
     {
-        public static void Log(DebugColor color, string text)
+        public static void Log(string text, DebugColor color = DebugColor.Gray)
         {
-#if !RELEASE_BUILD
             Debug.Log($"<color=#{ColorDictionary.Colors[color]}>{text}</color>");
-#endif
         }
     }
 }

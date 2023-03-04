@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Random = UnityEngine.Random;
 
-namespace Extensions
+namespace AndreyGritsenko.ExtensionCollection.Extensions
 {
     public static class EnumerableExtension
     {

@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
-namespace Patterns.SaveLoadData
+namespace AndreyGritsenko.ExtensionCollection.Patterns.SaveLoadData
 {
     public class BinarySerializationData<T> : IData<T>
     {
